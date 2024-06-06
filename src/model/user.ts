@@ -71,6 +71,6 @@ const userSchema: Schema<User> = new Schema({
 // in this part of code we try to create modal or collection in mongodb 
 //  mongoose.Model<User> in this section we define type of modal its part of typeScript
 // (mongoose.models.User as mongoose.Model<User>) we check is model is define then dont need to create new modal 
-const UserModel = (mongoose.models.User as mongoose.Model<User>) || mongoose.model<User>('user', userSchema);
-
+// const UserModel = (mongoose.models.User as mongoose.Model<User>) || mongoose.model<User>('user', userSchema);
+const UserModel = mongoose.models.User || mongoose.model<User>('User', userSchema);
 export default UserModel;

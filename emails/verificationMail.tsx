@@ -12,9 +12,12 @@ export default function VerificationMail({ username, otp }: VerificationMailProp
             <Head>
                 <title>Verification code </title>
                 <Font
-                    fontFamily='Roboto'
-                    fallbackFontFamily="verdon"
-                    fontWeight={400}
+                    fontFamily="Roboto"
+                    fallbackFontFamily="Verdana"
+                    webFont={{
+                        url: "https://fonts.gstatic.com/s/roboto/v27/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2",
+                        format: "woff2",
+                    }}
                     fontStyle="normal"
                 />
             </Head>
