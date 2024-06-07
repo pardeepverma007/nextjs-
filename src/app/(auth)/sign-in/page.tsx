@@ -1,15 +1,4 @@
-// import * as React from 'react';
 
-// function page() {
-//     return (
-//         <>
-//             <h1>
-//                 page
-//             </h1>
-//         </>
-//     )
-// }
-// export default page
 'use client'
 import { useSession, signIn, signOut } from "next-auth/react"
 
